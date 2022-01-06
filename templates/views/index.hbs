@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet", href="./css/styles.css">
+    </head>
+    <body>
+        <div class="main_content">
+            {{>header}}
+            <p>forecast for {{Country}} is {{forecast}}</p>
+            <form>
+                <input type="text" placeholder="Enter Address" id="address" name="address" required>
+                <input type="submit" >
+            </form>
+            <div id="result">
+                <p id="res-1"></p>
+                <p id="res-2"></p>
+            </div>
+        </div>
+        <footer>{{>footer}}</footer>
+        <script type="text/javascript", src="./js/script.js"></script>
+    </body>
+</html>
